@@ -1,0 +1,75 @@
+* {
+  --icon-default: #969696;
+  --btn-size-main: 2.5rem;
+  --btn-size-to: 1.9rem;
+  --btn-to-offset-right: 1.32rem;
+}
+
+.nametag {
+  scroll-margin-top: 4rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.short-post {
+  height: 6rem;
+}
+
+/* main buttton */
+.btn-right svg {
+  width: var(--btn-size-main);
+  height: var(--btn-size-main);
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  z-index: 1000;
+  color: var(--icon-default);
+  cursor: pointer;
+}
+
+/* jump to bottom mid top buttons */
+.btn-totop svg {
+  width: var(--btn-size-to);
+  height: var(--btn-size-to);
+  position: absolute;
+  right: var(--btn-to-offset-right);
+  top: 55.5%;
+  z-index: 1000;
+  color: var(--icon-default);
+  cursor: pointer;
+}
+
+.btn-tomid svg {
+  width: var(--btn-size-to);
+  height: var(--btn-size-to);
+  position: absolute;
+  right: var(--btn-to-offset-right);
+  top: 58.5%;
+  z-index: 1000;
+  color: var(--icon-default);
+  cursor: pointer;
+}
+
+.btn-tobottom svg {
+  width: var(--btn-size-to);
+  height: var(--btn-size-to);
+  position: absolute;
+  right: var(--btn-to-offset-right);
+  top: 61.5%;
+  z-index: 1000;
+  color: var(--icon-default);
+  cursor: pointer;
+}
+
+/* button next to shortened user posts */
+.btn-jump svg {
+  width: var(--btn-size-main);
+  height: var(--btn-size-main);
+  position: absolute;
+  top: 0.25rem;
+  right: -3rem;
+  color: var(--icon-default);
+  cursor: pointer;
+}
