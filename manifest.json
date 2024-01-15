@@ -1,9 +1,8 @@
 {
   "manifest_version": 3,
   "name": "navGPT",
-  "version": "0.9",
+  "version": "1.0",
   "description": "Extends ChatGPT webapp conversation navigation options",
-  "permissions": ["activeTab", "scripting"],
   "content_scripts": [
     {
       "matches": ["https://chat.openai.com/*"],
