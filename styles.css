@@ -20,7 +20,7 @@
 /* button container */
 .btn-container {
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 1rem;
   display: flex;
   flex-direction: column;
