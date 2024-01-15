@@ -8,4 +8,5 @@ Extends ChatGPT webapp conversation navigation options!
 - use the other buttons to jump to top, middle, or bottom of the conversation  
 
 How to use: go to extensions, enable developer mode in top right corner, click "load unpacked" in top left corner, select the extension folder.
+
 Coming to Chrome's extension store soon.
