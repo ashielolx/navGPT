@@ -17,47 +17,46 @@
   height: 6rem;
 }
 
+/* button container */
+.btn-container {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* main buttton */
-.btn-right svg {
+.btn-right {
   width: var(--btn-size-main);
   height: var(--btn-size-main);
-  position: absolute;
-  right: 1rem;
-  top: 50%;
   z-index: 1000;
   color: var(--icon-default);
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 /* jump to bottom mid top buttons */
-.btn-totop svg {
+.btn-totop {
   width: var(--btn-size-to);
   height: var(--btn-size-to);
-  position: absolute;
-  right: var(--btn-to-offset-right);
-  top: 55.5%;
   z-index: 1000;
   color: var(--icon-default);
   cursor: pointer;
 }
 
-.btn-tomid svg {
+.btn-tomid {
   width: var(--btn-size-to);
   height: var(--btn-size-to);
-  position: absolute;
-  right: var(--btn-to-offset-right);
-  top: 58.5%;
   z-index: 1000;
   color: var(--icon-default);
   cursor: pointer;
 }
 
-.btn-tobottom svg {
+.btn-tobottom {
   width: var(--btn-size-to);
   height: var(--btn-size-to);
-  position: absolute;
-  right: var(--btn-to-offset-right);
-  top: 61.5%;
   z-index: 1000;
   color: var(--icon-default);
   cursor: pointer;
@@ -68,8 +67,8 @@
   width: var(--btn-size-main);
   height: var(--btn-size-main);
   position: absolute;
-  top: 0.25rem;
-  right: -3rem;
+  top: 0;
+  right: -4rem;
   color: var(--icon-default);
   cursor: pointer;
 }
