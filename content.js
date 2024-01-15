@@ -28,7 +28,6 @@ function clickBtnRight() {
       }
     });
   }
-  console.log("clickBtnRight success");
 }
 
 // event listener for buttons next to user's posts
@@ -49,7 +48,6 @@ function clickBtnJump() {
       }
     }
   });
-  console.log("clickBtnJump success");
 }
 
 // event listener for jump to top of the conversation button
@@ -63,10 +61,7 @@ function clickBtnToTop() {
       );
 
       scrollConvo.scrollTop = 0;
-      console.log("scrolled to top");
     });
-  } else {
-    console.log("Elements not found");
   }
 }
 
@@ -83,13 +78,8 @@ function clickBtnToMid() {
       if (scrollConvo) {
         // Scroll to the middle
         scrollConvo.scrollTop = scrollConvo.scrollHeight / 2;
-        console.log("scrolled to middle");
-      } else {
-        console.log("Scrollable container not found");
       }
     });
-  } else {
-    console.log("Button not found");
   }
 }
 
@@ -106,13 +96,8 @@ function clickBtnToBottom() {
       if (scrollConvo) {
         // Scroll to the bottom
         scrollConvo.scrollTop = scrollConvo.scrollHeight;
-        console.log("scrolled to bottom");
-      } else {
-        console.log("Scrollable container not found");
       }
     });
-  } else {
-    console.log("Button not found");
   }
 }
 
@@ -125,7 +110,6 @@ function hideGPTPosts() {
   gptPosts.forEach((post) => {
     post.classList.add("hidden");
   });
-  console.log("hideGPTPosts success");
 }
 
 // show gpt posts
@@ -137,7 +121,6 @@ function showGPTPosts() {
   gptPosts.forEach((post) => {
     post.classList.remove("hidden");
   });
-  console.log("showGPTPosts success");
 }
 
 // shorten user posts
@@ -149,7 +132,6 @@ function shortUserPosts() {
   innerUserPosts.forEach((innerUserPost) => {
     innerUserPost.classList.add("short-post");
   });
-  console.log("shortUserPosts success");
 }
 
 // restore user posts to full length
@@ -161,7 +143,6 @@ function fullUserPosts() {
   innerUserPosts.forEach((innerUserPost) => {
     innerUserPost.classList.remove("short-post");
   });
-  console.log("fullUserPosts success");
 }
 
 // remove btn-jump
@@ -171,10 +152,10 @@ function removeBtnJump() {
   jumpButtons.forEach((button) => {
     button.parentElement.removeChild(button);
   });
-  console.log("removeBtnJump success");
 }
 
 // scrolls 1px to make btn-jump jump to correct posts
+// this doesn't work without setTimeout, but 100ms seems to be enough
 function tinyScroll() {
   const scrollConvo = document.querySelector(
     "[class*='react-scroll-to-bottom--css']:not([class*='full'])"
@@ -184,9 +165,7 @@ function tinyScroll() {
     setTimeout(() => {
       scrollConvo.scrollBy(0, -1);
     }, 100);
-  } else {
   }
-  console.log("tinyScroll success");
 }
 
 // adds buffer space if there are too few posts, enabling tinyScroll to work
@@ -220,7 +199,6 @@ function fewPostsTinyScroll() {
   } else {
     tinyScroll();
   }
-  console.log("fewPostsTinyScroll success");
 }
 
 // remove tinyScroll filler
@@ -229,7 +207,6 @@ function removeTinyScrollFiller() {
   if (tinyscrollFiller) {
     tinyscrollFiller.remove();
   }
-  console.log("removeTinyScrollFiller success");
 }
 
 // create container for the buttons, create buttons and give them classes
@@ -267,7 +244,6 @@ function btnJump() {
       nametag.appendChild(btnJump);
     }
   });
-  console.log("btnJump success");
 }
 
 // adjust button hover brighteness dependong on dark/light theme
@@ -275,13 +251,11 @@ function updateButtonBrightness() {
   const htmlElement = document.querySelector("html");
   const styleElement = document.createElement("style");
   document.head.appendChild(styleElement);
-  console.log("added button brighteness style element");
 
   function applyStyles() {
     const isDark = htmlElement.classList.contains("dark");
     const isLight = htmlElement.classList.contains("light");
     let css = "";
-    console.log("found the main element dark or light class");
 
     if (isDark) {
       css = `
