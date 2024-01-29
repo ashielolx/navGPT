@@ -7,4 +7,4 @@ Extends ChatGPT conversation navigation options!
 - click on a button next to one of your posts and be taken to that point of conversation
 - use the other buttons to jump to top, middle, or bottom of the conversation  
 
-Coming to Chrome's extension store soon.
+[Chrome's extension store link](https://chromewebstore.google.com/detail/navgpt/nkoagiekdadiaboofkgbojpipjlcmpgl)
