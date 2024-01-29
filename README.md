@@ -9,4 +9,4 @@ Extends ChatGPT conversation navigation options!
 
 [Chrome store link](https://chromewebstore.google.com/detail/navgpt/nkoagiekdadiaboofkgbojpipjlcmpgl)
 
-(Firefox store link)[https://addons.mozilla.org/en-US/firefox/addon/navgpt/]
+[Firefox store link](https://addons.mozilla.org/en-US/firefox/addon/navgpt/)
