@@ -2,8 +2,8 @@
   --icon-default: #969696;
   --btn-size-main: 2.5rem;
   --btn-size-to: 1.9rem;
-  --btn-to-offset-right: 1.32rem;
-}
+  --btn-size-jump: 2.3rem;
+ }
 
 .nametag {
   scroll-margin-top: 4rem;
@@ -64,8 +64,8 @@
 
 /* button next to shortened user posts */
 .btn-jump svg {
-  width: var(--btn-size-main);
-  height: var(--btn-size-main);
+  width: var(--btn-size-jump);
+  height: var(--btn-size-jump);
   position: absolute;
   top: 0;
   right: -4rem;
