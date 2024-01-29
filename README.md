@@ -5,7 +5,7 @@ Extends ChatGPT conversation navigation options!
 - click on a button next to one of your posts and be taken to that point of conversation!
 - use the other buttons to jump to top, middle, or bottom of the conversation
 
-[navgptscreenshot](https://github.com/danaxo/navGPT/assets/71124433/4487e490-286c-4449-8ac0-4c71e97f444a)  
+![navgptscreenshot](https://github.com/danaxo/navGPT/assets/71124433/11cd917b-824d-46df-bc59-b22026400073)
 
 [Chrome store link](https://chromewebstore.google.com/detail/navgpt/nkoagiekdadiaboofkgbojpipjlcmpgl)
 
