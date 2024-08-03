@@ -1,3 +1,4 @@
+# does not currently work - need to update selectors and possibly some other things
 # navGPT
 Extends ChatGPT conversation navigation options!
 
